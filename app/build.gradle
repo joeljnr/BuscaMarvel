@@ -33,7 +33,22 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
+    // LiveData e ViewModel
+    def lifecycle_version = "2.1.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+
+    // picasso
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
     // circle image
     implementation 'de.hdodenhof:circleimageview:3.0.2'
+
+    // OkHttp
+    implementation 'com.squareup.okhttp3:okhttp:4.3.1'
+
+    // Gson
+    implementation 'com.google.code.gson:gson:2.8.6'
 
 }
